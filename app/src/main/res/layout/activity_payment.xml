@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView android:id="@+id/tvConn" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:padding="8dp" android:gravity="center" android:textColor="#FFFFFF" android:textSize="13sp"
+        android:background="#757575" android:text="Checking connection…" />
+
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:padding="20dp">
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Pay Fees via M-Pesa" android:textSize="24sp" android:textStyle="bold"
+                android:textColor="#0D47A1" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Step 4 of 4 · Registration is confirmed only after payment"
+                android:layout_marginBottom="16dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp" android:hint="Student ID Number">
+                <com.google.android.material.textfield.TextInputEditText android:id="@+id/etStudentId"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:inputType="number" android:maxLength="8" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp" android:hint="M-Pesa Phone Number (07XX XXX XXX)">
+                <com.google.android.material.textfield.TextInputEditText android:id="@+id/etPhone"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:inputType="phone" android:maxLength="13" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp" android:hint="Fees Amount (Kshs)">
+                <com.google.android.material.textfield.TextInputEditText android:id="@+id/etAmount"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:inputType="number" android:text="1" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button android:id="@+id/btnPay" android:layout_width="match_parent"
+                android:layout_height="56dp" android:text="Send M-Pesa Prompt" />
+
+            <ProgressBar android:id="@+id/progress" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp" android:visibility="gone" />
+
+            <TextView android:id="@+id/tvStatus" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_marginTop="12dp"
+                android:gravity="center" android:textSize="15sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

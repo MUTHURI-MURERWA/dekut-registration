@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">DeKUT Registration</string>
+
+    <string-array name="courses">
+        <item>Select course</item>
+        <item>BSc Computer Science</item>
+        <item>BSc Information Technology</item>
+        <item>BSc Electrical &amp; Electronic Engineering</item>
+        <item>BSc Mechanical Engineering</item>
+        <item>BSc Civil Engineering</item>
+        <item>BSc Nursing</item>
+        <item>BCom Business Administration</item>
+    </string-array>
+
+    <string-array name="departments">
+        <item>Select department</item>
+        <item>Computer Science</item>
+        <item>Electrical &amp; Electronic Engineering</item>
+        <item>Mechanical Engineering</item>
+        <item>Civil Engineering</item>
+        <item>Health Sciences</item>
+        <item>Business</item>
+    </string-array>
+
+    <string-array name="hostel_locations">
+        <item>Select hostel location</item>
+        <item>On-campus – Block A</item>
+        <item>On-campus – Block B</item>
+        <item>Off-campus – Nyeri Town</item>
+        <item>Off-campus – Kiganjo</item>
+    </string-array>
+
+    <string-array name="room_types">
+        <item>Select room type</item>
+        <item>Bedsitter</item>
+        <item>1 Bedroom</item>
+        <item>2 Bedroom</item>
+        <item>Single room</item>
+    </string-array>
+</resources>
